@@ -1,0 +1,75 @@
+/* src/components/FakeNewsDetector.css */
+
+.detector-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.detector-container h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.detector-form {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.detect-button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.detect-button:hover {
+  background-color: #357ab8;
+}
+
+.detect-button:disabled {
+  background-color: #a3c7f2;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fake {
+  color: #d9534f;
+  background-color: #f8d7da;
+}
+
+.real {
+  color: #5cb85c;
+  background-color: #d4edda;
+}
